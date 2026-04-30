@@ -139,7 +139,20 @@ inline string MinExpressionToString(vector<Implicant>& implicants, vector<char>&
     string result = terms[0];
     for (int i = 1; i < terms.size(); i++)result += " | " + terms[i];
 
-    return !c ? result : string(1, vars[0]) + "==" + string(1, vars[1]);
+    if (c) {
+        vector<int> active;
+        for (int i = 0; i < varsCount; i++) {
+            int n = varsCount - 1 - i;
+            if ((implicants[0].mask >> n) & 1)
+                active.push_back(i);
+        }
+
+        if (active.size() == 2) {
+            return string(1, vars[active[0]]) + "==" + string(1, vars[active[1]]);
+        }
+    }
+
+    return result;
 }
 
 
