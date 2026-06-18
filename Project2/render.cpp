@@ -183,7 +183,7 @@ void RenderWindow() {
         static vector<unsigned int> minterms;      
         static string minimized;
         static bool show = false;
-        ImGui::ShowDebugLogWindow();
+        
         ImGui::InputText("Expressao", buffer, sizeof(buffer));
         ImGui::Checkbox("Implication Precedence", &imp);
         ImGui::SameLine(0, 50);
