@@ -34,11 +34,11 @@ Para a simplificação das expressões, foi utilizada uma versão simplificada d
 
 O sistema suporta os seguintes operadores lógicos:
 
-& → AND (conjunção)
-| → OR (disjunção)
--> → Implicação lógica
-== → Bicondicional
-~ → NOT (negação)
+- `&` → AND (conjunção)
+- `|` → OR (disjunção)
+- `->` → Implicação lógica
+- `==` → Bicondicional
+- `~` → NOT (negação)
 
 Exemplo de expressão:
 
