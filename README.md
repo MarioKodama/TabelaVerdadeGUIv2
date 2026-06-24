@@ -26,5 +26,4 @@ Para interpretar e avaliar as expressões lógicas, foi utilizado o algoritmo **
 
 ### 🔄 Demonstração do algoritmo Shunting Yard
 
-```md
 ![Shunting Yard Demo](https://i.imgur.com/Sl8tCyI.gif)
