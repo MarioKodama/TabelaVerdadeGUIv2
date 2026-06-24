@@ -30,6 +30,7 @@ O sistema suporta os seguintes operadores lógicos:
 - `->` → Implicação lógica
 - `==` → Bicondicional
 - `~` → NOT (negação)
+- `()` → Parêntesis 
 
 Exemplo de expressão:
 
