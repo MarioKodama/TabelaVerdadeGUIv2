@@ -17,8 +17,6 @@ A aplicação foi desenvolvida em C++ com foco em performance e estrutura de có
 - Geração de tabela verdade a partir de expressões lógicas
 - Simplificação da expressão lógica
 - Interface gráfica moderna utilizando Dear ImGui
-- Suporte a múltiplos operadores lógicos
-- Processamento eficiente de expressões complexas
 
 ---
 
@@ -29,4 +27,4 @@ Para interpretar e avaliar as expressões lógicas, foi utilizado o algoritmo **
 ### 🔄 Demonstração do algoritmo Shunting Yard
 
 ```md
-![Shunting Yard Demo](shunting_yard.gif)
+![Shunting Yard Demo]([shunting_yard.gif](https://imgur.com/a/wHD1MMB))
