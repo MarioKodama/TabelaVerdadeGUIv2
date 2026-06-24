@@ -1,0 +1,25 @@
+name: Build EXE
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build Solution
+        run: msbuild NOME_DO_ARQUIVO.sln /p:Configuration=Release
+
+      - name: Upload EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-build
+          path: |
+            **/Release/*.exe
