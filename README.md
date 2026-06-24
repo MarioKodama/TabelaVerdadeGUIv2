@@ -27,3 +27,28 @@ Para interpretar e avaliar as expressões lógicas, foi utilizado o algoritmo **
 ### 🔄 Demonstração do algoritmo Shunting Yard
 
 ![Shunting Yard Demo](https://i.imgur.com/Sl8tCyI.gif)
+
+✏️ Simplificação lógica
+
+Para a simplificação das expressões, foi utilizada uma versão simplificada do algoritmo de Quine-McCluskey, adaptada para o escopo do projeto, permitindo reduzir expressões booleanas de forma eficiente.
+
+### 🔣 Operadores suportados
+
+O sistema suporta os seguintes operadores lógicos:
+
+& → AND (conjunção)
+| → OR (disjunção)
+-> → Implicação lógica
+== → Bicondicional
+~ → NOT (negação)
+
+Exemplo de expressão:
+
+A & (B | ~C) -> D
+🧱 Estrutura do projeto
+
+Toda a lógica principal da aplicação está concentrada no arquivo:
+
+incl.h
+
+A implementação foi feita de forma inline, visando simplicidade e desempenho.
